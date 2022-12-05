@@ -1,4 +1,4 @@
-# Write a program which accepts the radius of a circle from the user and compute the area.
+#Write a program which accepts the radius of a circle from the user and compute the area.
 
 
 #include <stdio.h>
