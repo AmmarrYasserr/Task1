@@ -1,11 +1,24 @@
-import 'dart:io';
-
+/*Create a BankAccount class with balance and accountNumber instance variables,
+  Define a method deposit() that takes an amount and adds it to the balance,
+  Define a method withdraw() that takes an amount and subtracts it from the balance,
+  Instantiate an object of the class and call the deposit() and withdraw() methods. */
 void main() {
-  /*From the list
-  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-  Use list methods to create another list containing only values less than 13*/
+  BankAccount user1 = new BankAccount();
+  user1.balance = 4567.76;
+  user1.deposit(1326.97);
+  user1.withdraw(783.63);
+  print("Total Balance: ${user1.balance}");
+}
 
-  List<int> a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
-  List<int> lessthan13 = a.where((element) => element < 13).toList();
-  print("Values less than 13 : $lessthan13");
+class BankAccount {
+  double balance = 0;
+  double accountNumber = 0;
+
+  deposit(double add) {
+    this.balance += add;
+  }
+
+  withdraw(double subtract) {
+    this.balance -= subtract;
+  }
 }

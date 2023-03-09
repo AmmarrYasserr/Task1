@@ -1,9 +1,20 @@
+//What does the static keywork do? Explain with example.
 void main() {
-/*From the list
-  a = [11, 22, 33, 44, 55, 66, 77, 88, 99]
-  use firstWhere and lastWhere to print the elements divisible by 3 */
+  //static is used for a constant variable or a method that is same for every instance of a class
+  User name1 = new User();
+  User name2 = new User();
+  User.lastname = "Yasser";
+  name1.firstname = "Ammar";
+  name2.firstname = "Mohammed";
+  print(name1.firstname + " " + name1.getname);
+  print(name2.firstname + " " + name2.getname);
+}
 
-  List<int> a = [11, 22, 33, 44, 55, 66, 77, 88, 99];
-  print("First element in List divisible by 3: ${a.firstWhere((element) => element % 3 == 0)}");
-  print("Last element in List divisible by 3: ${a.lastWhere((element) => element % 3 == 0)}");
+class User {
+  String firstname = "";
+  static String lastname = "";
+
+  get getname {
+    return lastname;
+  }
 }
