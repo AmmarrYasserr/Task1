@@ -21,8 +21,7 @@ class Car extends Vehicle {
   String? year = "2015";
   String? numDoors = "4";
   printCarInfo() {
-    print(
-        "Car Brand: $brand, Car Model: $model, Car Year: $year, Car Doors number: $numDoors");
+    print("Car Brand: $brand, Car Model: $model, Car Year: $year, Car Doors number: $numDoors");
   }
 }
 
